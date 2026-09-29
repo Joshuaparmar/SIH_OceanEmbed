@@ -1,0 +1,7 @@
+xarray>=2023.1.0
+numpy>=1.23
+pandas>=1.5
+netCDF4>=1.6
+scipy>=1.9        # required by xarray.DataArray.interp() for the official 0.25 deg regridding path
+dask[array]>=2023.1.0  # optional but recommended: chunked/lazy opening (use_dask_chunking=True)
+matplotlib>=3.6   # optional: only needed for the diagnostic PNG (save_diagnostic_plot=True)
